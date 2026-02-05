@@ -1,12 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50">
+    <header></header>
+    <main class="w-full max-w-md p-6">
+      <div class="rounded-2xl bg-white p-6 shadow-sm">
+        <h1 class="py-4 text-2xl font-bold tracking-tight md:text-3xl">
+          Let's sign you in.
+        </h1>
+        <p class="py-4 text-lg text-slate-600 md:text-base">
+          Welcome back <br />You've been missed!
+        </p>
+        <form class="flex flex-col py-4" action="/profile">
+          <label for="email">Email</label>
+          <input
+            class="rounded-xl border border-gray-400 py-1 pl-2 placeholder:text-sm"
+            type="email"
+            required
+            placeholder="Enter Email"
+          />
+          <label for="password">Password</label>
+          <input
+            class="rounded-xl border border-gray-400 py-1 pl-2 placeholder:text-sm"
+            type="password"
+            minlength="8"
+            required
+            placeholder="Enter Password"
+          />
+          <button
+            class="my-2 rounded-xl bg-indigo-600 py-2 text-sm font-semibold text-white"
+          >
+            Sign in
+          </button>
+        </form>
+      </div>
+      <div class="bg-pink-400">
+        <h1>jeg heter rex</h1>
+      </div>
+    </main>
+  </body>
 </html>
