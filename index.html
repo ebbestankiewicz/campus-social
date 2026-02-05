@@ -3,44 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign in</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="min-h-screen bg-slate-50">
-    <header></header>
+  <body class="flex min-h-screen items-center justify-center bg-slate-50">
     <main class="w-full max-w-md p-6">
       <div class="rounded-2xl bg-white p-6 shadow-sm">
         <h1 class="py-4 text-2xl font-bold tracking-tight md:text-3xl">
           Let's sign you in.
         </h1>
-        <p class="py-4 text-lg text-slate-600 md:text-base">
-          Welcome back <br />You've been missed!
+        <p class="py-4 text-base text-slate-600 md:text-lg">
+          Welcome back — you've been missed.
         </p>
-        <form class="flex flex-col py-4" action="/profile">
-          <label for="email">Email</label>
+        <form class="flex flex-col gap-4 py-4" action="/profile">
+          <label class="text-sm font-medium text-slate-700" for="email"
+            >Email</label
+          >
           <input
-            class="rounded-xl border border-gray-400 py-1 pl-2 placeholder:text-sm"
+            class="rounded-xl border border-slate-300 py-2 pl-2 placeholder:text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
             type="email"
+            name="email"
+            id="email"
             required
             placeholder="Enter Email"
           />
-          <label for="password">Password</label>
+          <label class="text-sm font-medium text-slate-700" for="password"
+            >Password</label
+          >
           <input
-            class="rounded-xl border border-gray-400 py-1 pl-2 placeholder:text-sm"
+            class="rounded-xl border border-slate-300 py-2 pl-2 placeholder:text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
             type="password"
+            name="password"
+            id="password"
             minlength="8"
             required
             placeholder="Enter Password"
           />
           <button
-            class="my-2 rounded-xl bg-indigo-600 py-2 text-sm font-semibold text-white"
+            class="my-2 rounded-xl bg-indigo-600 py-2 text-sm font-semibold text-white transition hover:bg-indigo-700"
           >
             Sign in
           </button>
         </form>
-      </div>
-      <div class="bg-pink-400">
-        <h1>jeg heter rex</h1>
       </div>
     </main>
   </body>
