@@ -6,22 +6,92 @@
     <title>Profile</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
-  <body class="flex min-h-screen flex-col bg-slate-50">
-    <header
-      class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur"
-    >
+  <body class="min-h-screen bg-slate-50">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
       <div
-        class="mx-auto flex h-16 max-w-4xl items-center justify-between px-4"
+        class="mx-auto flex h-16 max-w-2xl items-center justify-between px-4"
       >
         <a
-          href="/feed/"
-          class="text-xl font-semibold tracking-tight text-slate-900"
+          href="../feed/index.html"
+          class="text-2xl font-bold tracking-tight text-slate-900"
         >
-          Logo
+          Logo<span class="text-indigo-600">.</span>
         </a>
-        <a href="/feed/">Feed</a>
+        <a href="../feed/index.html">Feed</a>
       </div>
     </header>
-    <main></main>
+    <main class="mx-auto w-full max-w-2xl space-y-6 p-4">
+      <section class="rounded-2xl bg-white p-6 shadow-sm">
+        <div class="flex flex-col items-center text-center">
+          <div class="h-28 w-28 rounded-full bg-slate-300"></div>
+          <h1 class="mt-4 text-xl font-bold text-slate-900">
+            Ebbe Stankiewicz
+          </h1>
+          <p class="text-slate-500">@ebbe</p>
+          <p class="mt-3 max-w-md text-sm text-slate-600">
+            Frontend student building calm, modern interfaces with Tailwind.
+            Coffee enthusiast ☕
+          </p>
+          <button
+            class="mt-4 rounded-full bg-indigo-600 px-5 py-2 font-medium text-white transition hover:bg-indigo-700"
+          >
+            Edit profile
+          </button>
+        </div>
+        <div class="mt-6 flex justify-center gap-10 text-center">
+          <div>
+            <p class="font-semibold text-slate-900">12</p>
+            <p class="text-sm text-slate-500">Posts</p>
+          </div>
+          <div>
+            <p class="font-semibold text-slate-900">340</p>
+            <p class="text-sm text-slate-500">Followers</p>
+          </div>
+          <div>
+            <p class="font-semibold text-slate-900">180</p>
+            <p class="text-sm text-slate-500">Following</p>
+          </div>
+        </div>
+        <div class="mt-6 border-t border-slate-200 pt-4 text-center">
+          <a
+            href="../index.html"
+            class="text-sm text-slate-500 transition hover:text-red-500"
+          >
+            Log out
+          </a>
+        </div>
+      </section>
+      <section class="space-y-4">
+        <article class="rounded-2xl bg-white p-4 shadow-sm">
+          <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-full bg-slate-300"></div>
+            <div>
+              <p class="text-sm font-semibold text-slate-900">
+                Ebbe Stankiewicz
+              </p>
+              <p class="text-xs text-slate-500">2h ago</p>
+            </div>
+          </div>
+          <p class="mt-3 text-sm text-slate-700">
+            Finished building my feed layout today — keeping everything soft and
+            modern.
+          </p>
+        </article>
+        <article class="rounded-2xl bg-white p-4 shadow-sm">
+          <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-full bg-slate-300"></div>
+            <div>
+              <p class="text-sm font-semibold text-slate-900">
+                Ebbe Stankiewicz
+              </p>
+              <p class="text-xs text-slate-500">Yesterday</p>
+            </div>
+          </div>
+          <p class="mt-3 text-sm text-slate-700">
+            Tailwind is insanely fast once your spacing system is consistent.
+          </p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

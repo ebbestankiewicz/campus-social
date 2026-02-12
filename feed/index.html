@@ -7,67 +7,70 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="flex min-h-screen flex-col bg-slate-50">
-    <header
-      class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur"
-    >
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
       <div
-        class="mx-auto flex max-w-4xl items-center justify-between px-4 h-16"
+        class="mx-auto flex h-16 max-w-2xl items-center justify-between px-4"
       >
         <a
-          href="/feed/"
-          class="text-xl font-semibold tracking-tight text-slate-900"
+          href="../feed/index.html"
+          class="text-2xl font-bold tracking-tight text-slate-900"
         >
-          Logo
-        <a href="/profile/index.html">
-            <div class="h-9 w-9 rounded-full bg-slate-300"></div>
+          Logo<span class="text-indigo-600">.</span>
         </a>
-        </div>
+        <a href="/profile/index.html">
+          <div class="h-9 w-9 rounded-full bg-slate-300"></div>
+        </a>
       </div>
     </header>
-    <main class="mx-auto w-full max-w-2xl p-4 space-y-4">
-        <section class="space-y-3">
-            <div class="space-y-1">
-                <label for="search" class="text-sm font-medium text-slate-700"></label>
-                <input 
-                type="search"
-                id="search"
-                name="search"
-                placeholder="Search"
-                class="w-full rounded-xl border border-slate-300 px-3 py-2 placeholder:text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
+    <main class="mx-auto w-full max-w-2xl space-y-4 p-4">
+      <section class="space-y-3">
+        <div class="space-y-1">
+          <label
+            for="search"
+            class="text-sm font-medium text-slate-700"
+          ></label>
+          <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search"
+            class="w-full rounded-xl border border-slate-300 px-3 py-2 placeholder:text-sm focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-slate-300"></div>
+          <input
+            type="text"
+            placeholder="Create new post"
+            class="flex-1 rounded-full bg-slate-100 px-4 py-2 placeholder:text-slate-500 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+          <button
+            class="rounded-full bg-indigo-600 px-5 py-2 font-medium text-white transition hover:bg-indigo-700"
+          >
+            Post
+          </button>
+        </div>
+      </section>
+      <section class="space-y-4">
+        <article class="rounded-2xl bg-white p-4 shadow-sm">
+          <div class="flex items-center gap-3">
+            <div class="h-10 w-10 rounded-full bg-slate-300"></div>
+            <div class="min-w-0">
+              <p class="truncate text-sm font-semibold text-slate-900">
+                Ebbe Stankiewicz
+                <span class="font-normal text-slate-500">@ebbe</span>
+              </p>
+              <p class="text-xs text-slate-500">2h ago</p>
             </div>
-        </section>
-        <section>
-            <div class="flex items-center gap-3">
-                <div class="h-10 w-10 rounded-full bg-slate-300"></div>
-                <input 
-                type="text"
-                placeholder="Create new post"
-                class="flex-1 rounded-full bg-slate-100 px-4 py-2 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-                <button
-                class="rounded-full bg-indigo-600 px-5 py-2 font-medium text-white transition hover:bg-indigo-700"
-                >
-                Post
-                </button>
-            </div>
-        </section>
-        <section class="space-y-4">
-            <article class="rounded-2xl bg-white p-4 shadow-sm">
-                <div class="flex items-center gap-3">
-                    <div class="h-10 w-10 rounded-full bg-slate-300"></div>
-                    <div class="min-w-0">
-                        <p class="truncate text-sm font-semibold text-slate-900">
-                            Ebbe Stankiewicz <span class="font-normal text-slate-500">@ebbe</span>
-                        </p>
-                        <p class="text-xs text-slate-500">2h ago</p>
-                    </div>
-                </div>
-                <p class="mt-3 text-sm text-slate-700">
-                    Built my auth page today, keeping it calm & modern. Tailwind feels super fast once the system is set.
-                </p>
-            </article>
-        </section>
+          </div>
+          <p class="mt-3 text-sm text-slate-700">
+            Built my auth page today, keeping it calm & modern. Tailwind feels
+            super fast once the system is set.
+          </p>
+        </article>
+      </section>
     </main>
   </body>
 </html>
