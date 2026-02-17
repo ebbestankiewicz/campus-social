@@ -1,5 +1,6 @@
-CSS Frameworks CA
-Description
+# CSS Frameworks CA
+
+## Description
 
 This project is a small social media prototype built as part of the CSS Frameworks assignment.
 The goal was to create a multi-page application using Tailwind CSS installed with npm (no CDN).
@@ -10,7 +11,8 @@ Authentication → Feed → Profile → Log out
 
 All content is static and pre-made, as JavaScript functionality was not required for this assignment.
 
-Pages
+# Pages
+
 Authentication page — /index.html
 
 Users can sign in using a form with HTML validation.
