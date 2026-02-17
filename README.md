@@ -13,7 +13,7 @@ All content is static and pre-made, as JavaScript functionality was not required
 
 # Pages
 
-Authentication page — /index.html
+## Authentication page — /index.html
 
 Users can sign in using a form with HTML validation.
 
@@ -27,7 +27,7 @@ Password minimum length (8 characters)
 
 Responsive centered auth card
 
-Feed page — /feed/index.html
+## Feed page — /feed/index.html
 
 A simulated social feed with pre-made content.
 
@@ -49,7 +49,7 @@ Clickable usernames and avatars linking to a profile
 
 Avatar dropdown menu with logout
 
-Profile page — /profile/index.html
+## Profile page — /profile/index.html
 
 A pre-made user profile page.
 
@@ -69,7 +69,7 @@ Logout option via avatar dropdown
 
 The profile page is also accessible by clicking the Emma Johansson avatar or name in the feed.
 
-Technologies used
+## Technologies used
 
 HTML
 
@@ -82,7 +82,7 @@ Available commands
 npm run dev
 npm run build
 
-AI usage
+## AI usage
 
 Tool used: ChatGPT
 Date: 12. February 2026
