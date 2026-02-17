@@ -21,11 +21,11 @@ After signing in, the user is redirected to a pre-made profile page.
 
 Features:
 
-Email validation
+- Email validation
 
-Password minimum length (8 characters)
+- assword minimum length (8 characters)
 
-Responsive centered auth card
+- Responsive centered auth card
 
 ## Feed page — /feed/index.html
 
@@ -33,21 +33,21 @@ A simulated social feed with pre-made content.
 
 Features:
 
-Recent / Popular sorting tabs (UI only)
+- Recent / Popular sorting tabs (UI only)
 
-Search bar with icon
+- Search bar with icon
 
-Create post input (UI only)
+- Create post input (UI only)
 
-Multiple pre-made posts
+- Multiple pre-made posts
 
-Post thumbnails
+- Post thumbnails
 
-Like / Comment / Share UI
+- Like / Comment / Share UI
 
-Clickable usernames and avatars linking to a profile
+- Clickable usernames and avatars linking to a profile
 
-Avatar dropdown menu with logout
+- Avatar dropdown menu with logout
 
 ## Profile page — /profile/index.html
 
@@ -55,37 +55,38 @@ A pre-made user profile page.
 
 Features:
 
-Profile image and username
+- Profile image and username
 
-Bio section
+- Bio section
 
-Follow button (UI only)
+- Follow button (UI only)
 
-Followers / Following / Posts stats
+- Followers / Following / Posts stats
 
-List of user posts
+- List of user posts
 
-Logout option via avatar dropdown
+- Logout option via avatar dropdown
 
 The profile page is also accessible by clicking the Emma Johansson avatar or name in the feed.
 
 ## Technologies used
 
-HTML
+- HTML
 
-Tailwind CSS (installed via npm)
+- Tailwind CSS (installed via npm)
 
-Prettier
+- Prettier
 
 Available commands
 
-npm run dev
-npm run build
+- npm run dev
+- npm run build
 
 ## AI usage
 
 Tool used: ChatGPT
 Date: 12. February 2026
 
-Purpose: Generating placeholder content, Fake users, Example posts, Placeholder avatars
+Purpose: Generating placeholder content, Fake users, Example posts, Placeholder avatars.
+
 Outcome: This helped visualize the UI, test layout consistency, and simulate a social media experience without implementing a backend or real user data.
